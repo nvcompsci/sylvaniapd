@@ -21,6 +21,7 @@ const SavedRanks = ({rankings}) => {
     }
   return (
     <div>
+        <h3>Submit Requests</h3>
         {
             rankings.length >= 5 ?
             <Button onClick={genLink} color="primary">Prepare Google Form to Submit</Button>
@@ -28,7 +29,7 @@ const SavedRanks = ({rankings}) => {
         }
         <br />
         {link ? <><Spinner type="grow" color="primary"/>
-            <a href={link} target="_blank"><Button>Click Here to Submit 😊</Button></a></> : ""}
+            <a href={link} target="_blank"><Button color='success'>Click Here to Submit 😊</Button></a></> : ""}
     </div>
   )
 }

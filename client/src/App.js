@@ -7,6 +7,7 @@ import SavedRanks from './comps/SavedRanks';
 import { useState, useEffect } from 'react';
 import './App.css'
 import getSessions from './sessions.js'
+import Special from './comps/Special';
 
 //let api = 'https://script.google.com/a/macros/sylvaniaschools.org/s/AKfycbwBgsnP-NnQ5hkPMpHZFZB6bjP51wyxZ-1Zad01nJY/dev'
 //api = 'https://script.google.com/a/macros/sylvaniaschools.org/s/AKfycbwwIMtOzcZOI79h9nHRoqAElKRI1n0Bdpd-oo_cqZbflCem10bmS_dmM5sXDVvHBF8Yig/exec'
@@ -44,12 +45,21 @@ function App() {
     setRankings([...rankings])
   }
 
+  const addSpecial = (id) => {
+    const specials = []
+    for (let i = 0; i < 5; i++) {
+      rankings[i] = {id, title: id}
+    }
+    setRankings([...rankings])
+  }
+
   return (
     <Container style={{backgroundColor: '#997C67'}}>
       <header>
         <h1>Nov. 8th Professional Development</h1>
-      </header>
+      </header>      
       <SavedRanks savedData={savedData} rankings={rankings}/>
+      <Special addSpecial={addSpecial} />
       <RankSelect changeRank={changeRank} rankings={rankings} deleteRank={deleteRank} />
       <Sessions addRank={addRank} sessions={sessions} />
     </Container>
