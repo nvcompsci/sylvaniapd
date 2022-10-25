@@ -292,6 +292,13 @@ const getSessions = () => [
     "presenter": "Dr. Mary Murry, Dr. Mark Seals",
     "role": "Educational Partnership",
     "desc": "Have you been engaged in a co-teaching model? Would you like to debrief with professionals on the outcomes, strategies, struggles, and success? This session provides the opportunity to collaborate with the presenters and deepen your coteaching experience. This would be a great session to attend with your coteaching team if possible."
+  },
+  {
+    "id":"Science of Reading",
+    "title":"Grades 4 & 5 Science of Reading Workshop",
+    "presenter":"Hanin Kashen",
+    "role":"LETRS Trainer for Units 1-4",
+    "desc":"Make n take workshop on Spelling/etymology, Morphology, Vocabulary, the Science of Reading way"
   }
 ]
 
