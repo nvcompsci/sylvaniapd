@@ -28,7 +28,7 @@ const SavedRanks = ({rankings}) => {
         }
         <br />
         {link ? <><Spinner type="grow" color="primary"/>
-            <a href={link} target="_blank"><Button>Continue to Submit Requests</Button></a></> : ""}
+            <a href={link} target="_blank"><Button>Click Here to Submit 😊</Button></a></> : ""}
     </div>
   )
 }
