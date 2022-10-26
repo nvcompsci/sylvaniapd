@@ -299,6 +299,13 @@ const getSessions = () => [
     "presenter":"Hanin Kashen",
     "role":"LETRS Trainer for Units 1-4",
     "desc":"Make n take workshop on Spelling/etymology, Morphology, Vocabulary, the Science of Reading way"
+  },
+  {
+    "id":"Wilson",
+    "title":"Wilson Dislexia Cohort Meeting",
+    "presenter":"Shari Barr",
+    "role":"Consultant",
+    "desc":"This session is ONLY for the Wilson Dislexia Cohort and runs from 8am - 9am."
   }
 ]
 
